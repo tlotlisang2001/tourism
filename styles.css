@@ -1,0 +1,168 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background:aqua;
+    color: #333;
+    line-height: 1.6;
+.form-control{
+    background-color: #abb3ab;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+}
+
+.form-control,
+.form-select {
+    padding: 10px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #198754;
+    box-shadow: 0 0 5px #198754;
+}
+
+.btn-success {
+    padding: 10px;
+}
+
+.text-danger {
+    font-size: 13px;
+}
+
+@media (max-width: 576px) {
+    .card {
+        padding: 15px !important;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+}
+
+h1, h2, h3 {
+    color: #198754;
+}
+
+.navbar {
+    padding: 12px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    background: #146c43;
+    border-radius: 5px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: #0007;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    color: white;
+}
+
+.card {
+    height: 100%;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-success {
+    background: #198754;
+}
+
+[data-gallery-image] img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+[data-gallery-image]:hover img {
+    transform: scale(1.05);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #198754;
+    box-shadow: 0 0 5px #198754;
+}
+
+
+
+.contact-box {
+    width: 100%;
+    max-width: 700px;
+    padding: 25px;
+    background-color: #146c43;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #0002;
+
+}
+
+@media (max-width: 576px) {
+    .contact-box {
+        padding: 15px;
+    }
+}
+
+
+footer {
+    background-color: #319164;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 768px) {
+    .hero-img {
+        height: 300px;
+    }
+
+    .hero-text h1 {
+        font-size: 25px;
+    }
+
+    .card-img-top,
+    [data-gallery-image] img {
+        height: 150px;
+    }
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery - Explore Lesotho</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    
+  
+ <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">
+                    Explore Lesotho
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navMenu"
+                        aria-controls="navMenu"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="destinations.html">Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="accommodation.html">Accommodation</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+       
+    <main class="container my-5">
+
+        <section class="text-center mb-5">
+            <h1>Explore Lesotho Gallery</h1>
+            <p class="lead">
+                Discover the mountains, waterfalls, culture and beautiful
+                landscapes of the Kingdom in the Sky.
+            </p>
+        </section>
+
+        
+        <section class="mb-4">
+            <h2 class="text-center mb-3">Featured Image</h2>
+
+            <div class="text-center">
+                <img id="galleryPreview"
+                     src="maletsunyane.jpg"
+                     class="img-fluid rounded shadow"
+                     alt="Maletsunyane Falls in Lesotho"
+                     style="max-height: 450px; cursor: pointer;"
+                     data-bs-toggle="modal"
+                     data-bs-target="#galleryModal">
+
+                <p id="imageCaption" class="mt-2">
+                    Maletsunyane Falls
+                </p>
+<div class="gallery-navigation" style="text-align: center; margin: 20px 0;">
+    <button id="prevBtn" onclick="changeImage(-1)" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">Previous</button>
+    <button id="nextBtn" onclick="changeImage(1)" style="padding: 10px 20px; font-size: 16px; cursor: pointer; margin-left: 10px;">Next</button>
+</div>
+            </div>
+        </section>
+
+        
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Our Photo Gallery</h2>
+
+            <div class="row g-4">
+
+                <div class="col-6 col-md-4">
+                    <button type="button"
+                            class="border-0 bg-transparent p-0 w-100"
+                            data-gallery-image
+                            data-src="maletsunyane.jpg"
+                            data-caption="Maletsunyane Falls"
+                            aria-label="View Maletsunyane Falls">
+                        <img src="maletsunyane.jpg"
+                             class="img-fluid rounded shadow-sm"
+                             alt="Maletsunyane Falls"
+                             loading="lazy">
+                    </button>
+                    <p class="text-center mt-2">Maletsunyane Falls</p>
+      
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <button type="button"
+                            class="border-0 bg-transparent p-0 w-100"
+                            data-gallery-image
+                            data-src="katse-dam.jpg"
+                            data-caption="Katse Dam"
+                            aria-label="View Katse Dam">
+                        <img src="katse-dam.jpg"
+                             class="img-fluid rounded shadow-sm"
+                             alt="Katse Dam surrounded by mountains"
+                             loading="lazy">
+                    </button>
+                    <p class="text-center mt-2">Katse Dam</p>
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <button type="button"
+                            class="border-0 bg-transparent p-0 w-100"
+                            data-gallery-image
+                            data-src="sehlabathebe.jpg"
+                            data-caption="Sehlabathebe National Park"
+                            aria-label="View Sehlabathebe National Park">
+                        <img src="sehlabathebe.jpeg"
+                             class="img-fluid rounded shadow-sm"
+                             alt="Sehlabathebe National Park"
+                             loading="lazy">
+                    </button>
+                    <p class="text-center mt-2">Sehlabathebe National Park</p>
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <button type="button"
+                            class="border-0 bg-transparent p-0 w-100"
+                            data-gallery-image
+                            data-src="thaba-bosiu.jpg"
+                            data-caption="Thaba Bosiu"
+                            aria-label="View Thaba Bosiu">
+                        <img src="Thaba_Bosiu_-_panoramio.jpg"
+                             class="img-fluid rounded shadow-sm"
+                             alt="Thaba Bosiu historical mountain"
+                             loading="lazy">
+                    </button>
+                    <p class="text-center mt-2">Thaba Bosiu</p>
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <button type="button"
+                            class="border-0 bg-transparent p-0 w-100"
+                            data-gallery-image
+                            data-src="afriski.jpg"
+                            data-caption="Afriski Mountain Resort"
+                            aria-label="View Afriski Mountain Resort">
+                        <img src="afriski mountain resort.jpeg"
+                             class="img-fluid rounded shadow-sm"
+                             alt="Afriski Mountain Resort"
+                             loading="lazy">
+                    </button>
+                    <p class="text-center mt-2">Afriski Mountain Resort</p>
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <button type="button"
+                            class="border-0 bg-transparent p-0 w-100"
+                            data-gallery-image
+                            data-src="maluti-mountains.jpg"
+                            data-caption="Maluti Mountains"
+                            aria-label="View Maluti Mountains">
+                        <img src="maluti mountains.jpeg"
+                             class="img-fluid rounded shadow-sm"
+                             alt="Maluti Mountains in Lesotho"
+                             loading="lazy">
+                    </button>
+                    <p class="text-center mt-2">Maluti Mountains</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <div class="modal fade" id="galleryModal"
+         tabindex="-1" aria-labelledby="galleryModalLabel"
+         aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="galleryModalLabel">
+                        Explore Lesotho
+                    </h2>
+
+                    <button type="button" class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body text-center">
+                    <img id="galleryModalImage"
+                         src="maletsunyane.jpg"
+                         class="img-fluid rounded"
+                         alt="Selected tourist attraction">
+
+                    <p id="modalCaption" class="mt-2">
+                        Maletsunyane Falls
+                    </p>
+
+                    <button type="button" class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                
+
+                
+
+                         <a href="contacts.html" class="btn btn-success"></a>
+                Contact us
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="bg-success text-white text-center p-3">
+        <p class="mb-0">
+            &copy; 2026 Explore Lesotho. All rights reserved.
+        </p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+
+
+</body>
+</html>
